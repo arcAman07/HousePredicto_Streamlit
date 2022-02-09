@@ -51,7 +51,7 @@ def main():
             crim, zn, indus, chas, nox, rm, age, dis, rad, tax, ptratio, b, lstat
         )
         st.success(
-            "The Median value of owner-occupied homes in 1000's of dollars is {} ".format(
+            "The Median value of owner-occupied homes in 1000's of dollars is {:.2f} ".format(
                 result[0]
             )
         )
