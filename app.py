@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
-Data = pd.read_csv("D:/ML/Web Apps- Deployed/Boston Housing/dataset/housing.csv")
+Data = pd.read_csv("dataset/housing.csv")
 
 
 pickle_in = open("C:/Users/amans/housing.pkl", "rb")
