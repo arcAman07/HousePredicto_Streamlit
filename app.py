@@ -6,7 +6,7 @@ import numpy as np
 Data = pd.read_csv("dataset/Boston.csv")
 
 
-pickle_in = open("C:/Users/amans/housing.pkl", "rb")
+pickle_in = open("StoredModels/housing.pkl", "rb")
 classifier = pickle.load(pickle_in)
 
 
