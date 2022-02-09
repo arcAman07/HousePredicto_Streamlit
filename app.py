@@ -10,7 +10,7 @@ pickle_in = open("StoredModels/housing.pkl", "rb")
 classifier = pickle.load(pickle_in)
 
 
-def mood_recog(crim, zn, indus, chas, nox, rm, age, dis, rad, tax, ptratio, b, lstat):
+def house_pred(crim, zn, indus, chas, nox, rm, age, dis, rad, tax, ptratio, b, lstat):
     prediction = classifier.predict(
         [[crim, zn, indus, chas, nox, rm, age, dis, rad, tax, ptratio, b, lstat]]
     )
@@ -47,7 +47,7 @@ def main():
     )
     lstat = st.text_input("Enter % lower status of the population: ")
     if st.button("Predict"):
-        result = mood_recog(
+        result = house_pred(
             crim, zn, indus, chas, nox, rm, age, dis, rad, tax, ptratio, b, lstat
         )
         st.success(
